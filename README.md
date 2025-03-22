@@ -17,3 +17,6 @@ Navigate through to sms/testing to see various API endpoint test using cURL and 
 
 ## Models:
 Three Basic Models comprising of Students, Courses and Teachers that makes up the School Management System
+
+## Tools:
+.net Core API, .net Core MVC, Mysql on Xampp, Swagger 
