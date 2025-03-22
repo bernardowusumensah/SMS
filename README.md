@@ -9,3 +9,11 @@ This example connects our server to a MySQL Database with MySql.Data.MySqlClient
     - An API Controller which allows us to access information about Teachers, Students and Courses
 - Program.cs
     - Configuration of the application
+ 
+    - 
+## Testing:
+Navigate through to sms/testing to see various API endpoint test using cURL and MVC as well
+
+
+## Models:
+Three Basic Models comprising of Students, Courses and Teachers that makes up the School Management System
