@@ -1,0 +1,8 @@
+﻿@model IEnumerable<sms.Models.Students>
+
+@foreach (sms.Models.Students Students in Model)
+{
+    <div>
+        <a href="/StudentsPage/Show/@Students.studentid">@Students.studentfname @Students.studentlname</a>
+    </div>
+}

@@ -1,0 +1,9 @@
+﻿
+@model IEnumerable<sms.Models.Teacher>
+
+@foreach (sms.Models.Teacher Teacher in Model)
+{
+    <div>
+        <a href="/TeacherPage/Show/@Teacher.teacherid">@Teacher.teacherfname @Teacher.teacherlname</a>
+    </div>
+}

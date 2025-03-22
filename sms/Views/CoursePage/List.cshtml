@@ -1,0 +1,8 @@
+﻿@model IEnumerable<sms.Models.Courses>
+
+@foreach (sms.Models.Courses Course in Model)
+{
+    <div>
+        <a href="/CoursePage/Show/@Course.courseid">@Course.coursecode @Course.coursename</a>
+    </div>
+}
