@@ -60,3 +60,4 @@ C:\Users\user\Desktop\HUMBER\FULL STACK\CODE SAMPLES\csharp\sms\sms\bin\Debug\ne
 C:\Users\user\Desktop\HUMBER\FULL STACK\CODE SAMPLES\csharp\sms\sms\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\user\Desktop\HUMBER\FULL STACK\CODE SAMPLES\csharp\sms\sms\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\user\Desktop\HUMBER\FULL STACK\CODE SAMPLES\csharp\sms\sms\obj\Debug\net8.0\sms.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\Desktop\HUMBER\FULL STACK\CODE SAMPLES\csharp\sms\sms\obj\Debug\net8.0\sms.sourcelink.json

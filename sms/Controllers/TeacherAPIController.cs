@@ -30,7 +30,7 @@ namespace sms.Controllers
         /// </returns>
         [HttpGet]
         [Route(template: "ListTeachers")]
-        public List<Teacher> ListTeachers()
+        public List<Teacher> ListTeachers(string SearchKey = null)
         {
             // Create an empty list of Teachers
             List<Teacher> Teachers = new List<Teacher>();
@@ -166,5 +166,147 @@ namespace sms.Controllers
             return SearchTeacher;
 
         }
+
+        /// <summary>
+        /// Adds a new teacher to the system
+        /// </summary>
+        /// <param name="TeacherData"></param>
+        /// <example>
+        /// POST: api/TeacherData/AddTeacher
+        /// Headers: Content-Type: application/json
+        ///  Request Body:
+        //   {
+        //"teacherid": 19,
+        //"teacherfname": "Mich",
+        //"teacherlname": "Ann",
+        //"employeenumber": "N012345",
+        //"hiredate": "2025-04-10T21:28:50.420Z",
+        //"salary": 2500
+        //     }
+        /// </example>
+        /// <returns>
+        /// The inserted Teacher Id from the database if successful. 0 if Unsuccessful
+        /// </returns>
+
+        [HttpPost(template: "AddTeacher")]
+        public int AddTeacher([FromBody] Teacher TeacherData)
+        {
+            // 1. Check for empty names
+            if (string.IsNullOrWhiteSpace(TeacherData.teacherfname) || string.IsNullOrWhiteSpace(TeacherData.teacherlname))
+            {
+                Console.WriteLine("Error: Teacher first name or last name cannot be empty.");
+                return 0;
+            }
+
+            // 2. Check if employee number is in correct format: "T" followed by digits
+            if (string.IsNullOrWhiteSpace(TeacherData.employeenumber) ||
+                !System.Text.RegularExpressions.Regex.IsMatch(TeacherData.employeenumber, @"^T\d+$"))
+            {
+                Console.WriteLine("Error: Employee Number must start with 'T' followed by digits (e.g., T123).");
+                return 0;
+            }
+
+            try
+            {
+                using (MySqlConnection connection = _context.AccessDatabase())
+                {
+                    connection.Open();
+
+                    // 3. Check if employee number already exists
+                    MySqlCommand checkCommand = connection.CreateCommand();
+                    checkCommand.CommandText = "SELECT COUNT(*) FROM teachers WHERE employeenumber = @empNo";
+                    checkCommand.Parameters.AddWithValue("@empNo", TeacherData.employeenumber);
+
+                    long count = (long)checkCommand.ExecuteScalar();
+
+                    if (count > 0)
+                    {
+                        Console.WriteLine($"Error: Employee Number '{TeacherData.employeenumber}' is already taken.");
+                        return 0;
+                    }
+
+                    // 4. Insert new teacher
+                    MySqlCommand insertCommand = connection.CreateCommand();
+                    insertCommand.CommandText = @"
+                INSERT INTO teachers (teacherfname, teacherlname, employeenumber, salary, hiredate)
+                VALUES (@teacherfname, @teacherlname, @employeenumber, @salary, CURRENT_DATE())";
+
+                    insertCommand.Parameters.AddWithValue("@teacherfname", TeacherData.teacherfname);
+                    insertCommand.Parameters.AddWithValue("@teacherlname", TeacherData.teacherlname);
+                    insertCommand.Parameters.AddWithValue("@employeenumber", TeacherData.employeenumber);
+                    insertCommand.Parameters.AddWithValue("@salary", TeacherData.salary);
+
+                    insertCommand.ExecuteNonQuery();
+
+                    Console.WriteLine("Teacher successfully added.");
+                    return Convert.ToInt32(insertCommand.LastInsertedId);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred while adding the teacher: {ex.Message}");
+                return 0;
+            }
+        }
+
+
+
+
+
+        /// <summary>
+        /// /// Deletes a Teacher from the database
+        /// </summary>
+        /// <param name="teacherid">Primary key of the Teacher to delete</param>
+        ///  <example>
+        /// DELETE: api/TeacherData/DeleteTeacher -> 1
+        /// </example>
+        /// <returns>
+        /// Number of rows affected by delete operation.
+        /// </returns>
+
+        [HttpDelete(template: "DeleteTeacher/{teacherid}")]
+        public int DeleteTeacher(int teacherid)
+        {
+            try
+            {
+                // 'using' will close the connection after the code executes
+                using (MySqlConnection Connection = _context.AccessDatabase())
+                {
+                    Connection.Open();
+
+                    // Establish a new command (query) for our database
+                    MySqlCommand Command = Connection.CreateCommand();
+                    Command.CommandText = "DELETE FROM teachers WHERE teacherid=@teacherId";
+                    Command.Parameters.AddWithValue("@teacherId", teacherid);
+
+                    int rowsAffected = Command.ExecuteNonQuery();
+
+                    if (rowsAffected == 0)
+                    {
+                        Console.WriteLine($"No teacher found with ID {teacherid}.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Successfully deleted teacher with ID {teacherid}.");
+                    }
+
+                    return rowsAffected;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception details
+                Console.WriteLine($"An error occurred while deleting the teacher: {ex.Message}");
+                return 0;
+            }
+        }
+
+
+
+
+
+
+
     }
 }
+

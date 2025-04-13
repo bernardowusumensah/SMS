@@ -3,64 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\views\\coursepage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\views\\coursepage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\views\\studentspage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\views\\studentspage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\controllers\\coursepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\controllers\\coursepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\controllers\\courseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\controllers\\courseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\controllers\\studentspagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\controllers\\studentspagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\views\\coursepage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\views\\coursepage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\views\\studentspage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\views\\studentspage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\views\\teacherpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\views\\teacherpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\views\\teacherpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\views\\teacherpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\views\\teacherpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\views\\teacherpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\views\\teacherpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\views\\teacherpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\controllers\\studentsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\controllers\\studentsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|c:\\users\\user\\desktop\\humber\\full stack\\code samples\\csharp\\sms\\sms\\models\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DB90836-CBF7-4380-BACB-44696CBA2115}|sms\\sms.csproj|solutionrelative:sms\\models\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,204 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StudentsPageController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\StudentsPageController.cs",
-              "RelativeDocumentMoniker": "sms\\Controllers\\StudentsPageController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\StudentsPageController.cs",
-              "RelativeToolTip": "sms\\Controllers\\StudentsPageController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwA4AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T13:07:52.184Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\CoursePage\\List.cshtml",
-              "RelativeDocumentMoniker": "sms\\Views\\CoursePage\\List.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\CoursePage\\List.cshtml",
-              "RelativeToolTip": "sms\\Views\\CoursePage\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T18:15:32.21Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\StudentsPage\\List.cshtml",
-              "RelativeDocumentMoniker": "sms\\Views\\StudentsPage\\List.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\StudentsPage\\List.cshtml",
-              "RelativeToolTip": "sms\\Views\\StudentsPage\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T18:17:28.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CourseAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\CourseAPIController.cs",
-              "RelativeDocumentMoniker": "sms\\Controllers\\CourseAPIController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\CourseAPIController.cs",
-              "RelativeToolTip": "sms\\Controllers\\CourseAPIController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAcwBcAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:22:58.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CoursePageController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\CoursePageController.cs",
-              "RelativeDocumentMoniker": "sms\\Controllers\\CoursePageController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\CoursePageController.cs",
-              "RelativeToolTip": "sms\\Controllers\\CoursePageController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:48:34.014Z",
+              "Title": "DeleteConfirm.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\TeacherPage\\DeleteConfirm.cshtml",
+              "RelativeDocumentMoniker": "sms\\Views\\TeacherPage\\DeleteConfirm.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\TeacherPage\\DeleteConfirm.cshtml",
+              "RelativeToolTip": "sms\\Views\\TeacherPage\\DeleteConfirm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T13:54:05.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "sms\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "sms\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAcwCoAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T18:40:43.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Show.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\CoursePage\\Show.cshtml",
-              "RelativeDocumentMoniker": "sms\\Views\\CoursePage\\Show.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\CoursePage\\Show.cshtml",
-              "RelativeToolTip": "sms\\Views\\CoursePage\\Show.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\TeacherPage\\Show.cshtml",
+              "RelativeDocumentMoniker": "sms\\Views\\TeacherPage\\Show.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\TeacherPage\\Show.cshtml",
+              "RelativeToolTip": "sms\\Views\\TeacherPage\\Show.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T18:16:33.527Z",
+              "WhenOpened": "2025-04-12T13:22:58.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Show.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\StudentsPage\\Show.cshtml",
-              "RelativeDocumentMoniker": "sms\\Views\\StudentsPage\\Show.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\StudentsPage\\Show.cshtml",
-              "RelativeToolTip": "sms\\Views\\StudentsPage\\Show.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T18:32:58.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TeacherPageController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\TeacherPageController.cs",
-              "RelativeDocumentMoniker": "sms\\Controllers\\TeacherPageController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\TeacherPageController.cs",
-              "RelativeToolTip": "sms\\Controllers\\TeacherPageController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:49:04.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TeacherAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\TeacherAPIController.cs",
-              "RelativeDocumentMoniker": "sms\\Controllers\\TeacherAPIController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\TeacherAPIController.cs",
-              "RelativeToolTip": "sms\\Controllers\\TeacherAPIController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:49:00.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "List.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\TeacherPage\\List.cshtml",
               "RelativeDocumentMoniker": "sms\\Views\\TeacherPage\\List.cshtml",
               "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\TeacherPage\\List.cshtml",
               "RelativeToolTip": "sms\\Views\\TeacherPage\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T18:30:20.009Z",
+              "WhenOpened": "2025-04-12T13:01:38.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Program.cs",
-              "RelativeDocumentMoniker": "sms\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Program.cs",
-              "RelativeToolTip": "sms\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\TeacherPage\\New.cshtml",
+              "RelativeDocumentMoniker": "sms\\Views\\TeacherPage\\New.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Views\\TeacherPage\\New.cshtml",
+              "RelativeToolTip": "sms\\Views\\TeacherPage\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T12:41:19.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeacherPageController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\TeacherPageController.cs",
+              "RelativeDocumentMoniker": "sms\\Controllers\\TeacherPageController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\TeacherPageController.cs",
+              "RelativeToolTip": "sms\\Controllers\\TeacherPageController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:26:50.453Z",
+              "WhenOpened": "2025-04-12T08:13:08.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StudentsAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\StudentsAPIController.cs",
-              "RelativeDocumentMoniker": "sms\\Controllers\\StudentsAPIController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\StudentsAPIController.cs",
-              "RelativeToolTip": "sms\\Controllers\\StudentsAPIController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TeacherAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\TeacherAPIController.cs",
+              "RelativeDocumentMoniker": "sms\\Controllers\\TeacherAPIController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Controllers\\TeacherAPIController.cs",
+              "RelativeToolTip": "sms\\Controllers\\TeacherAPIController.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAswPoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:23:51.174Z",
+              "WhenOpened": "2025-04-10T17:16:09.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "courses.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Models\\courses.cs",
-              "RelativeDocumentMoniker": "sms\\Models\\courses.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Models\\courses.cs",
-              "RelativeToolTip": "sms\\Models\\courses.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T15:15:43.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Models\\Teacher.cs",
               "RelativeDocumentMoniker": "sms\\Models\\Teacher.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Models\\Teacher.cs",
               "RelativeToolTip": "sms\\Models\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T15:05:00.247Z",
+              "WhenOpened": "2025-04-13T01:47:34.128Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SchoolDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Models\\SchoolDbContext.cs",
+              "RelativeDocumentMoniker": "sms\\Models\\SchoolDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\HUMBER\\FULL STACK\\CODE SAMPLES\\csharp\\sms\\sms\\Models\\SchoolDbContext.cs",
+              "RelativeToolTip": "sms\\Models\\SchoolDbContext.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:15:32.653Z"
             }
           ]
         }
