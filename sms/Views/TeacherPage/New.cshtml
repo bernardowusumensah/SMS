@@ -1,0 +1,36 @@
+﻿<div id="containershow">
+    <nav>
+        <a class="navlink" href="/TeacherPage/List">Back To Teachers</a>
+    </nav>
+    <h2>New Teacher</h2>
+    <form method="POST" action="/TeacherPage/Create">
+        <div class="inputrow">
+            <label for="teacherfname">First Name:</label>
+            <input type="text" id="teacherfname" name="teacherfname" />
+
+        </div>
+        <div class="inputrow">
+            <label for="teacherlname">Last Name:</label>
+            <input type="text" id="teacherlname" name="teacherlname" />
+
+        </div>
+        <div class="inputrow">
+            <label for="employeenumber">Employee Number:</label>
+            <input type="text" id="employeenumber" name="employeenumber" />
+        </div>
+        <div class="inputrow">
+            <label for="hiredate">Hire Date:</label>
+            <div>
+                <textarea id="hiredate" name="hiredate"></textarea>
+            </div>
+        </div>
+        <div class="inputrow">
+            <label for="salary">Salary</label>
+            <input type="text" id="salary"  name="salary" />
+        </div>
+
+        <div class="inputrow">
+            <input type="submit" value="Create Teacher" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+﻿@model sms.Models.Teacher
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/TeacherPage/Show/@Model.teacherid">Cancel</a>
+    </nav>
+    <h2>Are you sure you want to delete @Model.teacherfname @Model.teacherlname?</h2>
+    <p>This action cannot be undone.</p>
+    <form method="POST" action="/TeacherPage/Delete/@Model.teacherid">
+        <button class="btn-warning">
+            Confirm Delete
+        </button>
+    </form>
+</div>
