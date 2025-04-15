@@ -12,7 +12,12 @@ This example connects our server to a MySQL Database with MySql.Data.MySqlClient
  
     - 
 ## Testing:
-Navigate through to sms/testing to see various API endpoint test using cURL and MVC as well
+Navigate through to sms/add-update-testing to see various API endpoint test using cURL and MVC as well
+
+## New implementation
+- An API which Updates a Teacher
+- A web page that allows a user to enter updated T eacher information
+
 
 
 ## Models:
