@@ -84,5 +84,32 @@ namespace sms.Controllers
         }
 
 
+        // GET : TeacherPage/Edit/{id}
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            Teacher SelectedTeacher = _api.FindTeacher(id);
+            return View(SelectedTeacher);
+        }
+
+        // POST: TeacherPage/Update/{id}
+        [HttpPost]
+        public IActionResult Update(int id, string teacherfname, string teacherlname, string employeenumber, DateTime hiredate, decimal salary)
+        {
+            Teacher UpdatedTeacher = new Teacher();
+            UpdatedTeacher.teacherfname = teacherfname;
+            UpdatedTeacher.teacherlname = teacherlname;
+            UpdatedTeacher.employeenumber = employeenumber;
+            UpdatedTeacher.hiredate = hiredate;
+            UpdatedTeacher.salary = salary;
+
+            // not doing anything with the response
+            _api.UpdateTeacher(id, UpdatedTeacher);
+            // redirects to show author
+            return RedirectToAction("Show", new { id = id });
+        }
+
+
+
     }
 }

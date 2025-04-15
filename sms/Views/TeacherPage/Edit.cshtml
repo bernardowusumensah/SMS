@@ -1,0 +1,37 @@
+﻿@model sms.Models.Teacher
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/TeacherPage/Show/@Model.teacherid">Back</a>
+    </nav>
+    <h2>New Teacher</h2>
+    <form method="POST" action="/TeacherPage/Update/@Model.teacherid">
+        <div class="inputrow">
+            <label for="teacherfname">First Name:</label>
+            <input type="text" id="teacherfname" name="teacherfname" value="@Model.teacherfname" />
+
+        </div>
+        <div class="inputrow">
+            <label for="teacherlname">Last Name:</label>
+            <input type="text" id="teacherlname" name="teacherlname" value="@Model.teacherlname" />
+         </div>
+            <div class="inputrow">
+                <label for="employeenumber">Employee Number:</label>
+            <input type="text" id="employeenumber" name="employeenumber" value="@Model.employeenumber" />
+            </div>
+            <div class="inputrow">
+                <label for="hiredate">Hire Date:</label>
+                
+                    <input type="text" id="hiredate" name="hiredate" value="@Model.hiredate" />
+                
+            </div>
+            <div class="inputrow">
+                <label for="salary">Salary</label>
+                <input type="text" id="salary" name="salary" value="@Model.salary"/>
+            </div>
+
+            <div class="inputrow">
+                <input type="submit" value="Update Teacher" />
+            </div>
+    </form>
+</div>

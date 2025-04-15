@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using sms.Models;
 using System;
 using MySql.Data.MySqlClient;
+using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
 
 namespace sms.Controllers
@@ -189,7 +192,7 @@ namespace sms.Controllers
         /// </returns>
 
         [HttpPost(template: "AddTeacher")]
-        public int AddTeacher([FromBody] Teacher TeacherData)
+        public int AddTeacher([FromBody]Teacher TeacherData)
         {
             // 1. Check for empty names
             if (string.IsNullOrWhiteSpace(TeacherData.teacherfname) || string.IsNullOrWhiteSpace(TeacherData.teacherlname))
@@ -206,47 +209,30 @@ namespace sms.Controllers
                 return 0;
             }
 
-            try
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
             {
-                using (MySqlConnection connection = _context.AccessDatabase())
-                {
-                    connection.Open();
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
 
-                    // 3. Check if employee number already exists
-                    MySqlCommand checkCommand = connection.CreateCommand();
-                    checkCommand.CommandText = "SELECT COUNT(*) FROM teachers WHERE employeenumber = @empNo";
-                    checkCommand.Parameters.AddWithValue("@empNo", TeacherData.employeenumber);
+                // CURRENT_DATE() for the author join date in this context
+                // Other contexts the join date may be an input criteria!
+                Command.CommandText = "insert into teachers (teacherfname, teacherlname, employeenumber, hiredate, salary) values (@teacherfname, @teacherlname, @employeenumber, CURRENT_DATE(), @salary)";
+                Command.Parameters.AddWithValue("@teacherfname", TeacherData.teacherfname);
+                Command.Parameters.AddWithValue("@teacherlname", TeacherData.teacherlname);
+                Command.Parameters.AddWithValue("@employeenumber", TeacherData.employeenumber);
+                Command.Parameters.AddWithValue("@hiredate", TeacherData.hiredate);
+                Command.Parameters.AddWithValue("@salary", TeacherData.salary);
 
-                    long count = (long)checkCommand.ExecuteScalar();
+                Command.ExecuteNonQuery();
 
-                    if (count > 0)
-                    {
-                        Console.WriteLine($"Error: Employee Number '{TeacherData.employeenumber}' is already taken.");
-                        return 0;
-                    }
+                return Convert.ToInt32(Command.LastInsertedId);
 
-                    // 4. Insert new teacher
-                    MySqlCommand insertCommand = connection.CreateCommand();
-                    insertCommand.CommandText = @"
-                INSERT INTO teachers (teacherfname, teacherlname, employeenumber, salary, hiredate)
-                VALUES (@teacherfname, @teacherlname, @employeenumber, @salary, CURRENT_DATE())";
-
-                    insertCommand.Parameters.AddWithValue("@teacherfname", TeacherData.teacherfname);
-                    insertCommand.Parameters.AddWithValue("@teacherlname", TeacherData.teacherlname);
-                    insertCommand.Parameters.AddWithValue("@employeenumber", TeacherData.employeenumber);
-                    insertCommand.Parameters.AddWithValue("@salary", TeacherData.salary);
-
-                    insertCommand.ExecuteNonQuery();
-
-                    Console.WriteLine("Teacher successfully added.");
-                    return Convert.ToInt32(insertCommand.LastInsertedId);
-                }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occurred while adding the teacher: {ex.Message}");
-                return 0;
-            }
+            // if failure
+            return 0;
+
         }
 
 
@@ -307,6 +293,103 @@ namespace sms.Controllers
 
 
 
+
+
+        /// <summary>
+        /// Updates a teacher  in the database. Data is Teacher object, request query contains ID
+        /// </summary>
+        /// <param name="TeacherData">Teacher Object</param>
+        /// <param name="teacherid">The Teacher ID primary key</param>
+        /// <example>
+        /// PUT: api/Teacher/UpdateTeacher/3
+        /// Headers: Content-Type: application/json
+        /// Request Body:
+        /// {
+        ///	    "teacherfname":"Bernard",
+        ///	    "teacherlname":"Owusu-Mensah",
+        ///	    "employeenumber":"n01723151",
+        ///	    "hiredate":"2025-04-15",
+        ///	    "salary" " 7500"
+        /// } -> 
+        /// {
+        ///     "teacherid":3,
+        ///	    "teacherfname":"Bernard",
+        ///	    "teacherlname":"Owusu-Mensah",
+        ///	    "employeenumber":"n01723151",
+        ///	     "hiredate":"2025-04-15",
+        ///	      "salary" " 7500"
+        /// }
+        /// </example>
+        /// <returns>
+        /// The updated Teacher object
+        /// </returns>
+        [HttpPut(template: "UpdateTeacher/{teacherid}")]
+        
+        public ActionResult<Teacher> UpdateTeacher(int teacherid, [FromBody] Teacher TeacherData)
+        {
+            // Step 1: Check if teacher exists
+            if (teacherid <= 0)
+            {
+                return BadRequest("Teacher does not exists");
+            }
+
+
+
+            // Step 2: Validate Teacher Name fields
+
+            if (!string.IsNullOrWhiteSpace(TeacherData.teacherfname) || !string.IsNullOrWhiteSpace(TeacherData.teacherlname))
+            {
+                return BadRequest("Teacher first name and last name cannot be empty.");
+            }
+
+                // Step 3: Validate Salary
+                if (TeacherData.salary < 0)
+                {
+                    return BadRequest("Salary must be a non-negative number.");
+                }
+
+                // Step 4: Validate Hire Date is not in the future
+                if (TeacherData.hiredate > DateTime.Now)
+                {
+                    return BadRequest("Hire date cannot be in the future.");
+                }
+
+            // Step 5: Proceed to update
+
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+
+                // parameterize query
+                Command.CommandText = "update teachers set teacherfname=@teacherfname, teacherlname=@teacherlname, employeenumber =@employeenumber, hiredate=@hiredate, salary=@salary where teacherid=@id";
+                Command.Parameters.AddWithValue("@teacherfname", TeacherData.teacherfname);
+                Command.Parameters.AddWithValue("@teacherlname", TeacherData.teacherlname);
+                Command.Parameters.AddWithValue("@employeenumber", TeacherData.employeenumber);
+                Command.Parameters.AddWithValue("@hiredate", TeacherData.hiredate);
+                Command.Parameters.AddWithValue("@salary", TeacherData.salary);
+
+                Command.Parameters.AddWithValue("@id", teacherid);
+
+                Command.ExecuteNonQuery();
+
+
+
+            }
+
+            return FindTeacher(teacherid);
+        }
+
+            
+        }
+
+
+
+
+
     }
-}
+
+
 

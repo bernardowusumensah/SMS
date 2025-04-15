@@ -1,6 +1,10 @@
 ﻿@model sms.Models.Teacher
 <h1>@Model.teacherfname @Model.teacherlname</h1>
-<a href="/TeacherPage/List">Back to List</a> <a class="alert-warning" href="/TeacherPage/DeleteConfirm/@Model.teacherid">Delete</a>
+<nav>
+<a href="/TeacherPage/List">Back to List</a> 
+<a class="alert-warning" href="/TeacherPage/DeleteConfirm/@Model.teacherid">Delete</a>
+    <a href="/TeacherPage/Edit/@Model.teacherid">Edit</a>
+</nav>
 <p>@Model.hiredate.ToString("yyyy-M-d")</p>
 <p>@Model.employeenumber</p>
 <p>@Model.salary</p>
